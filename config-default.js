@@ -1,14 +1,1 @@
-let Config = {}
-
-Config = {
-  "auth" : [
-    {
-      key: '',
-      domain: ''
-    }
-  ]
-}
-
-module.exports = {
-  Config
-}
+export const Config = {   "auth" : [{clientID: '', domain: '' }]};

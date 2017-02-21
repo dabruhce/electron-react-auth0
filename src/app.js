@@ -11,7 +11,15 @@ import Layout from './Layout'
 import Home from './components/pages/Home'
 import Login from './components/pages/auth/Login'
 
-const auth = new AuthService(Config.auth.clientId, Config.auth.domain)
+
+console.log(Config);
+console.log(Config.clientID);
+console.log(Config.domain);
+console.log(Config.auth[0].clientID);
+console.log(Config.auth[0].domain);
+
+
+const auth = new AuthService(Config.auth[0].clientID, Config.auth[0].domain)
 
 render((
   <Router history={hashHistory}>
